@@ -1,0 +1,18 @@
+<p></p>Hello <b>{{user.username}} </b>please upload Excel files and validate excel emails and send_emails from current logined user email <b> {{user.email}} </b><a href="{% url 'logout' %}">Logout</a>     </p>
+
+
+<form  method = "post" enctype="multipart/form-data">
+	{% csrf_token %}
+	{% if form %}
+	{{ form.as_p}}
+    <button type="submit">submit</button>
+    {% endif %}
+</form>
+
+
+<h1>New Email Added </h1>
+
+
+
+{{c.value}}
+

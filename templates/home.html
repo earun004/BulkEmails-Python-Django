@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email APP</title>
+</head>
+<body>
+    {% block content %}
+        
+        {% if user.is_authenticated %}
+        <h1>Welcome {{user.username}},your user ID is {{user.id}} and your email "{{user.email}}" , This is Homepage </h1>
+
+            <a href="{% url 'vendor' %}">Vendor</a>
+            &nbsp;&nbsp;
+            &nbsp;
+            
+            <!-- <a href="clean_data"> clean Data</a> -->
+            <a href="excel_data"> Excel Data</a>
+            
+            
+          
+            &nbsp;&nbsp;
+
+            &nbsp;
+            
+            <a href="{% url 'logout' %}">Logout</a>
+
+        {% else %}
+        <h1> Welcome to Home Page </h1>
+            <a href="{% url 'login' %}">Login</a> 
+            <br>
+            <br>
+            <a href="{% url 'register' %}">Register</a>
+
+        {% endif %}
+
+    {% endblock %}
+</body>
+</html>

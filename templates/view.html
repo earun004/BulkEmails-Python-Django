@@ -1,0 +1,56 @@
+
+  
+    
+<p>Hai ,<b>{{user.username}}</b> ,<b> {{user.id}} </b> , <b>{{user.email}} </b> Excel data <a href="{% url 'logout' %}">Logout</a></p>
+    
+
+    
+
+               &nbsp;
+               &nbsp;
+               &nbsp;
+               &nbsp;
+
+<form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+    <table >
+        
+        <th>Emails in Excel Sheet</th>
+        {% if d1 %}
+        {% for i in d1 %}
+        <tr>
+           
+            <td>{{i.value}}</td>
+            
+            
+            
+            <td><a href="delete/{{i.value}}">Delete</a></td>
+            
+           
+        </tr>
+        {% endfor %}
+        {% endif %}
+      
+    </table>
+       
+    
+</form>
+&nbsp;
+&nbsp;
+<p>Add New Emails &nbsp; &nbsp;<a href="add">Add</a></p>
+<!-- <form method="POST" action="add/" enctype="multipart/form-data">
+
+    {% csrf_token %}
+
+<table border="1">
+
+<th>New Email Added </th>
+<tr>
+<td>{{c.value}}</td>
+
+</tr>
+
+</table>
+    
+   
+</form> -->

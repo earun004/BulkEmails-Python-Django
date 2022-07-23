@@ -1,0 +1,39 @@
+<form method="POST">
+    {% csrf_token %}
+    
+    <p>Hello ,<b> {{user.username}} </b> currently loggin with this <b>  {{user.email}} </b>, Now you Edit Excel Emails Here <a href="{% url 'logout' %}">Logout</a></p>
+    
+    <table border="1" >
+         
+        <tr>
+            <th>ID</th>
+            <th>User ID</th>
+            <!-- <th>Emails</th> -->
+            <th>TimeStamp</th>
+            
+
+            
+        </tr>
+        {% for i in doc %}
+        <tr>
+            
+            <!-- {% if user.id == i.user_id %} -->
+            <td>{{i.id}}</td>
+            <td>{{i.user_id}}</td>
+            <td> {{i.document}} </td>
+            <td> {{i.uploaded_at}} </td>
+            <td><a href="{{i.id}}/validate">validate data</a></td>
+            <td><a href="{{i.id}}/eview">View</a></td>
+             
+           
+
+            <!-- {% endif %} -->
+               &nbsp;&nbsp;
+            
+        </tr>
+        
+        {%  endfor %}
+       
+
+    </table>
+</form>

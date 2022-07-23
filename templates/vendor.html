@@ -1,0 +1,6 @@
+<form  method = "post" enctype="multipart/form-data">
+	{% csrf_token %}
+	<p></p>Hello {{user.username}} please upload Excel files and validate excel emails and send_emails from current logined user email :{{user.email}} </p>
+	{{ form.as_p}}
+    <button type="submit">submit</button>
+</form>
