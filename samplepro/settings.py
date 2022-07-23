@@ -131,36 +131,15 @@ MEDIA_URL ='media/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'email-smtp.ap-south-1.amazonaws.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'AKIAR5IABK4OCZPONNAZ'      # Must create SMTP Credentials
-EMAIL_HOST_PASSWORD = 'BN/KAcJDdPJAtruP0d6SA3kVy61E+ulWyDDbug3gH/Mb'  # Must create SMTP Credentials
-# DEFAULT_FROM_EMAIL = 'myses@sender.com' # If don't need, comment out!!
-
-# EMAIL_BACKEND = 'django_ses.SESBackend'
-# EMAIL_HOST_USER = 'AKIAR5IABK4OJ3UQ7I55'      # Must create SMTP Credentials
-# EMAIL_HOST_PASSWORD = 'BPC0auIX+89+zEY51G46jsBjBx/YpVXPSikZIP5QaZUN'  # Must create SMTP Credentials
-
-# EMAIL_BACKEND = 'django_ses.SESBackend'
-# AWS_SES_REGION_NAME = 'ap-south-1'
-# AWS_SES_REGION_ENDPOINT = 'email-smtp.ap-south-1.amazonaws.com'
-
-# EMAIL_HOST_USER = 'AKIAR5IABK4OJ3UQ7I55'
-# EMAIL_HOST_PASSWORD = 'BPC0auIX+89+zEY51G46jsBjBx/YpVXPSikZIP5QaZUN'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'email-smtp.ap-south-1.amazonaws.com'
 # EMAIL_PORT = 587
 # EMAIL_USE_TLS = True
-# EMAIL_USE_SSL = True
-# AWS_ACCESS_KEY_ID = 'AKIAR5IABK4OA46HZIAM'
-# AWS_SECRET_ACCESS_KEY = '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'
+# EMAIL_HOST_USER = 'AKIAR5IABK4OCZPONNAZ'      # Must create SMTP Credentials
+# EMAIL_HOST_PASSWORD = 'BN/KAcJDdPJAtruP0d6SA3kVy61E+ulWyDDbug3gH/Mb'  # Must create SMTP Credentials
 
-
-# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-# AWS_STORAGE_BUCKET_NAME = 'emaillist-buck'
-# AWS_S3_REGION_NAME = 'ap-south-1'
 
 
 
