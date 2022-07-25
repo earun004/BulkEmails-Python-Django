@@ -133,12 +133,6 @@ MEDIA_URL ='media/'
 
 # DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'email-smtp.ap-south-1.amazonaws.com'
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-# EMAIL_HOST_USER = 'AKIAR5IABK4OCZPONNAZ'      # Must create SMTP Credentials
-# EMAIL_HOST_PASSWORD = 'BN/KAcJDdPJAtruP0d6SA3kVy61E+ulWyDDbug3gH/Mb'  # Must create SMTP Credentials
 
 
 
